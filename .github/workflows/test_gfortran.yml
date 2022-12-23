@@ -68,4 +68,4 @@ jobs:
         # the making of gtest_c twice even if the former is up to date after the first making. It
         # may lead to errors due to parallel making. To avoid this, we make gtest_c first.
         run: |
-          $FC test_mem.f90 && ./a.out
+          $FC test_mem.f90 -o test_mem && ./test_mem
